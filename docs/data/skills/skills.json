@@ -1,0 +1,61 @@
+[
+      {
+        "Skill":"C",
+        "filter": ["all","prog"],
+        "image": "../../assets/icons/skills/c.png"
+    },
+
+    {
+        "Skill":"C++",
+        "filter": ["all","prog"],
+        "image": "../../assets/icons/skills/c++.png"
+    },
+
+     {
+        "Skill":"Java",
+        "filter": ["all","prog"],
+        "image": "../../assets/icons/skills/java.png"
+    },
+
+     {
+        "Skill":"Python",
+        "filter": ["all","prog"],
+        "image": "../../assets/icons/skills/python.png"
+    },
+
+     {
+        "Skill":"JavaScript",
+        "filter": ["all","prog"],
+        "image": "../../assets/icons/skills/js.png"
+    },
+
+     {
+        "Skill":"HTML",
+        "filter": ["all","prog"],
+        "image": "../../assets/icons/skills/html.png"
+    },
+
+     {
+        "Skill":"CSS",
+        "filter": ["all","prog"],
+        "image": "../../assets/icons/skills/css.png"
+    },
+
+       {
+        "Skill":"MongoDB",
+        "filter": ["all","db"],
+        "image": "../../assets/icons/skills/mongodb.png",
+        "height": "110px",
+        "width":"110px"
+    },
+    
+
+     {
+        "Skill":"NodeJS",
+        "filter": ["all","tech"],
+        "image": "../../assets/icons/skills/nodejs.png"
+    }
+    
+
+    
+]

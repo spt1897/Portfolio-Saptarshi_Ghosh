@@ -1,0 +1,415 @@
+*{
+    margin:0;
+    padding:0;
+    user-select: none;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+
+@font-face {
+    font-family: "awesome";
+    src: url(../../assets/fonts/awesome.regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ballmain';
+    src: url(../../assets/fonts/ballmain.regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Allura';
+    src: url('../../assets/fonts/allura.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html{
+  width: 100vw; 
+    /*height: 1500px;*/
+    background-color: #000000;
+    overflow-x: hidden;
+  overflow-y: scroll;
+ 
+}
+/*Background*/
+
+body{
+background-image: url("../../assets/images/background.png");
+width: 100vw;
+height: 100vh;
+background-size:100% 100vh;
+background-repeat: no-repeat;
+overflow-y: scroll;
+overflow-x: hidden;
+position: fixed;
+}
+
+/*Navigation Bar Starts*/
+
+#logo{
+    height:45px;
+    margin:20px;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    top:0;
+      position: fixed;
+      width: 100vw;
+    backdrop-filter: blur(10px);
+   z-index: 1;
+}
+
+#menubar{
+    display:flex;
+    flex-direction: column;
+    position:fixed;
+    right: 0%;
+    top: 0px;
+    height: 100vh;
+    padding-top:30px;
+    padding-right:40px;
+     padding-left:40px;
+    backdrop-filter: blur(10px);
+    display:none;
+    z-index: 1;
+}
+#navdiv{
+    margin-right: 35px;
+  }
+#navdiv ul{
+    display: flex;
+
+}
+#menubar ul{
+    display: flex;
+    flex-direction: column;
+}
+
+#menubar ul li{
+    margin:auto;
+}
+
+#navdiv ul li,#menubar ul li{
+    margin:20px;
+    margin-left: 50px;
+    margin-top:30px;
+    list-style: none;
+    position:relative;
+}
+
+#close{
+    display: flex;
+    flex-direction: row-reverse;
+} 
+
+#navdiv ul li a, #menubar ul li a{
+    text-decoration: none;
+    color: yellow;
+    font-size: 1.4rem;
+    font-family: "Baloo Bhai 2", serif;
+    font-style: italic;
+     text-align: center;
+}
+
+
+
+#menu{
+    margin:30px;
+   
+    display:none;
+}
+
+#menu:hover{
+    cursor: pointer;
+}
+#close:hover{
+    cursor: pointer;
+}
+
+#close img:active{
+     border-radius: 50px;
+        background-color: rgba(224, 222, 222, 0.5);
+}
+
+#menubar ul li:hover{
+    cursor:pointer;
+}
+#menubar ul li a:hover,#navdiv ul li a:hover {
+    font-weight: bold;
+}
+#menubar ul li a:active{
+    color:white ;
+}
+
+#navdiv ul li:hover::after{
+    content: '';
+    height:4px;
+    width:100%;
+    background-color: yellow;
+    position: absolute;
+    left:0;
+    bottom: -25px;
+    opacity: 1;
+
+}
+
+
+
+
+@media (max-width:975px){
+
+    #navdiv{
+        display:none;
+
+    }
+
+    #menu{
+        display:block;
+    }
+
+    #menu:active{
+        border-radius: 50px;
+        background-color: rgba(224, 222, 222, 0.5);
+        
+    }
+    
+}
+
+
+/*Navigation bar ends*/
+
+
+/*Contact Form*/
+
+#main{
+   
+    width:85%;
+    /*height:550px;*/
+    
+    margin:auto;
+     margin-top: 110px;
+     display:flex;
+     border-radius: 20px;
+        box-shadow: 0 3px 10px 5px rgb(178, 10, 245);
+        border:2px solid  rgb(178, 10, 245);
+        margin-bottom: 2%;
+   
+}
+
+#contact{
+    width: 65%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    backdrop-filter: blur(40px);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 1.5%;
+}
+
+#connect{
+    width:35%;
+     box-shadow: 0 3px 10px 5px rgb(178, 10, 245);
+     border-left: 2px solid  rgb(178, 10, 245);
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(40px);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+}
+
+#labelContact{
+    font-family: "Baloo Bhai 2",serif;
+    font-size: 2rem;
+    color:rgb(178, 10, 245);
+    text-align: center;
+    margin-top: 2%;
+      text-shadow: 10px 10px 7px black;
+}
+
+
+#labelConnect{
+       font-family: "Baloo Bhai 2",serif;
+    font-size: 1.6rem;
+    color:rgb(178, 10, 245);
+    text-align: center;
+   
+      text-shadow: 10px 10px 7px black;
+
+}
+
+#form input{
+    width:45%;
+    margin-left: 2.3%;
+    margin-right: 2.3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 50px;
+}
+
+#form #sub{
+    width: 95% !important; 
+   
+}
+
+
+#form #msg{
+    width: 95% !important; 
+    margin-left: 2%;
+    margin-right: 4.8%;
+    margin-top: 2%;
+    margin-bottom: 2.5%;
+    height: 200px !important;
+     resize: none !important;
+}
+
+#submit{
+    width: 40%;
+    height: 60px;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    margin-bottom: 3%;
+    font-family: "Baloo Bhai 2", serif;
+    font-size: 1.5rem;
+    
+   background-color:rgba(0,0,0,0);
+    backdrop-filter: blur(40px);
+    border-radius: 30px;
+    color:  rgb(178, 10, 245);
+    font-weight: bold;
+    border: 3px solid  rgb(178, 10, 245);
+   
+}
+
+#submit:hover ,#submit:active{
+cursor: pointer;
+background-color: rgb(178, 10, 245) ;
+color: rgb(0, 0, 0);
+  
+}
+
+#form input, #form #msg{
+    font-family: "Baloo Bhai 2", serif;
+    font-size: 1.3rem;
+     background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(40px);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    border-bottom: 4px solid rgb(178, 10, 245);
+      /*box-shadow: 2px 2px 5px 1px rgb(178, 10, 245);*/
+      text-align: center;
+}
+
+
+#form input:focus, #form #msg:focus{
+   box-shadow: 0px 0px 10px 5px rgb(178, 10, 245);
+}
+
+
+#links{
+    display: flex;
+    gap:2rem;
+}
+
+
+#links a{
+    height: 55%;
+    width: 55%;
+}
+
+#links img{
+    height:100%;
+    width: 100%;
+}
+
+#links img:hover,#link img:active{
+    cursor: pointer;
+  
+   opacity: 0.3;
+}
+
+#phone::-webkit-outer-spin-button,
+#phone::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+ 
+}
+
+
+#phone{
+    -moz-appearance: textfield;
+
+}
+
+@media (max-width:960px){
+#main{
+    flex-direction: column;
+
+}
+
+#contact{
+    width:100%;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    padding-bottom: 3.7%;
+}
+#connect{
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px -3px 10px 5px rgb(178, 10, 245);
+    border-left: none;
+    border-top: 2px solid  rgb(178, 10, 245);
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    padding-top: 10%;
+    gap:1.5rem;
+}
+
+#links a{
+    height: 40%;
+    width: 40%;
+}
+
+#links a img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+}
+
+
+@media (max-width:610px){
+    #form input{
+        width:95% !important;
+    }
+
+ #links a{
+    height: 55%;
+    width: 55%;
+}
+#contact{
+    padding-left: 7%;
+    padding-right: 7%;
+}
+ 
+}
+/*Contact Form Ends*/

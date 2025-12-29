@@ -1,0 +1,424 @@
+*{
+    margin:0;
+    padding:0;
+    user-select: none;
+    box-sizing: border-box;
+    transition: all 0.2s;
+}
+
+@font-face {
+    font-family: "awesome";
+    src: url(../../assets/fonts/awesome.regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ballmain';
+    src: url(../../assets/fonts/ballmain.regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Allura';
+    src: url('../../assets/fonts/allura.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html{
+  width: 100vw; 
+    /*height: 1500px;*/
+    background-color: #000000;
+    overflow-x: hidden;
+  overflow-y: scroll;
+ 
+}
+/*Background*/
+
+body{
+background-image: url("../../assets/images/background.png");
+width: 100vw;
+height: 100vh;
+background-size:100% 100vh;
+background-repeat: no-repeat;
+overflow-y: scroll;
+overflow-x: hidden;
+position: fixed;
+}
+
+/*Navigation Bar Starts*/
+
+#logo{
+    height:45px;
+    margin:20px;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    top:0;
+      position: fixed;
+      width: 100vw;
+    backdrop-filter: blur(10px);
+   z-index: 1;
+}
+
+#menubar{
+    display:flex;
+    flex-direction: column;
+    position:fixed;
+    right: 0%;
+    top: 0px;
+    height: 100vh;
+    padding-top:30px;
+    padding-right:40px;
+     padding-left:40px;
+    backdrop-filter: blur(10px);
+    display:none;
+    z-index: 1;
+}
+#navdiv{
+    margin-right: 35px;
+  }
+#navdiv ul{
+    display: flex;
+
+}
+#menubar ul{
+    display: flex;
+    flex-direction: column;
+}
+
+#menubar ul li{
+    margin:auto;
+}
+
+#navdiv ul li,#menubar ul li{
+    margin:20px;
+    margin-left: 50px;
+    margin-top:30px;
+    list-style: none;
+    position:relative;
+}
+
+#close{
+    display: flex;
+    flex-direction: row-reverse;
+} 
+
+#navdiv ul li a, #menubar ul li a{
+    text-decoration: none;
+    color: yellow;
+    font-size: 1.4rem;
+    font-family: "Baloo Bhai 2", serif;
+    font-style: italic;
+     text-align: center;
+}
+
+
+
+#menu{
+    margin:30px;
+   
+    display:none;
+}
+
+#menu:hover{
+    cursor: pointer;
+}
+#close:hover{
+    cursor: pointer;
+}
+
+#close img:active{
+     border-radius: 50px;
+        background-color: rgba(224, 222, 222, 0.5);
+}
+
+#menubar ul li:hover{
+    cursor:pointer;
+}
+#menubar ul li a:hover,#navdiv ul li a:hover {
+    font-weight: bold;
+}
+#menubar ul li a:active{
+    color:white ;
+}
+
+#navdiv ul li:hover::after{
+    content: '';
+    height:4px;
+    width:100%;
+    background-color: yellow;
+    position: absolute;
+    left:0;
+    bottom: -25px;
+    opacity: 1;
+
+}
+
+
+
+
+@media (max-width:975px){
+
+    #navdiv{
+        display:none;
+
+    }
+
+    #menu{
+        display:block;
+    }
+
+    #menu:active{
+        border-radius: 50px;
+        background-color: rgba(224, 222, 222, 0.5);
+        
+    }
+    
+}
+
+
+/*Navigation bar ends*/
+
+
+/*thanks section*/
+
+#thanks{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+     
+      margin: auto;
+      margin-top: 90px;
+      
+      border-radius: 30px;
+
+    align-items: center;
+    justify-content: center;
+  
+    
+      width:40%;
+      height: 625px;
+    gap:2rem;
+    margin-bottom: 2%;
+}
+
+
+#checkimg{
+    margin:auto;
+    height:100%;
+    width:100%;
+      border-radius: 30px;
+}
+#checkimg img{
+    height:100%;
+    width:100%;
+    border-radius: 50px;
+      box-shadow: 0 3px 20px 5px rgb(178, 10, 245);
+        border:3px solid  rgb(178, 10, 245);
+}
+
+#header{
+    position: absolute;
+    top:12%;
+    color:rgb(178, 10, 245);
+    font-family: "Baloo Bhai 2", serif;
+    font-size: 2.3rem;
+    text-align: center;
+    width: 100%;
+    margin:auto;
+    font-weight: bold;
+}
+
+#footer{
+    position: absolute;
+    color:rgb(178, 10, 245);
+    bottom: 100px;
+    font-family: "Baloo Bhai 2", serif;
+    font-size: 1.4rem;
+    text-align: center;
+    width: 100%;
+    margin:auto;
+    
+}
+#btn{
+     position: absolute;
+width: 100%;
+ height:60px;
+   
+   display: flex;
+   justify-content: center;
+    bottom:25px;
+}
+#goback{
+
+    height:60px;
+    width: 40%;
+    margin: auto;
+    border-radius: 30px;
+      font-family: "Baloo Bhai 2", serif;
+    font-size: 1.5rem;
+    
+   background-color:rgba(0,0,0,0);
+    backdrop-filter: blur(40px);
+    border-radius: 30px;
+    color:  rgb(178, 10, 245);
+    font-weight: bold;
+    border: 3px solid  rgb(178, 10, 245);
+}
+
+#goback:hover{
+    cursor: pointer;
+background-color: rgb(178, 10, 245) ;
+color: rgb(0, 0, 0);
+  
+}
+
+@media(max-width:1300px){
+#thanks{
+    width:50%;
+}
+
+}
+
+@media(max-width:1090px){
+    #thanks{
+    width:60%;
+}
+
+}
+
+@media(max-width:974px){
+    #thanks{
+        margin-top: 110px;
+    width:60%;
+}}
+
+@media(max-width:831px){
+    #thanks{
+        margin-top: 110px;
+    width:70%;
+}}
+
+@media(max-width:732px){
+    #thanks{
+        margin-top: 110px;
+    width:80%;
+}}
+
+@media(max-width:632px){
+    #thanks{
+        margin-top: 110px;
+    width:85%;
+}
+
+
+}
+
+@media(max-width:575px){
+    #thanks{
+        margin-top: 110px;
+    width:85%;
+}
+#header{
+    font-size: 1.7rem;
+}
+
+#footer{
+    font-size: 1.1rem;
+}
+
+#goback{
+     font-size: 1.1rem;
+}
+}
+
+
+@media(max-width:495px){
+    #thanks{
+        margin-top: 110px;
+    width:85%;
+}
+#header{
+    font-size: 1.7rem;
+}
+
+#footer{
+    font-size: 1.1rem;
+}
+
+#goback{
+     font-size: 1.1rem;
+}
+}
+
+
+
+@media(max-width:455px){
+    #thanks{
+        margin-top: 110px;
+    width:85%;
+}
+#header{
+    font-size: 1.5rem;
+}
+
+#footer{
+    font-size: 0.8rem;
+}
+
+#goback{
+     font-size: 0.8rem;
+     height: 50px;
+}
+}
+
+@media(max-width:400px){
+    #thanks{
+        margin-top: 110px;
+    width:85%;
+    height: 535px;
+}
+#header{
+    font-size: 1.5rem;
+}
+
+#footer{
+    font-size: 0.8rem;
+}
+
+#goback{
+     font-size: 0.8rem;
+      height: 45px;
+}
+}
+
+@media(max-width:350px){
+    #thanks{
+        margin-top: 110px;
+    width:85%;
+    height: 500px;
+}
+#header{
+    font-size: 1.3rem;
+}
+
+#footer{
+    font-size: 0.7rem;
+}
+
+#goback{
+     font-size: 0.7rem;
+     height: 40px;
+}
+}
+
+
+
+/*thanks section ends*/
