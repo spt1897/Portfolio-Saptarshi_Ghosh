@@ -130,7 +130,7 @@ const filter= filterSelect.value;
 
 skillShow.innerHTML="";
 
-fetch("../../data/skills/skills.json")
+fetch("https://spt1897.github.io/Portfolio-Saptarshi_Ghosh/data/skills/skills.json")
 .then(res=>res.json())
 .then(skills =>{
 
@@ -188,5 +188,6 @@ const dresume= document.getElementById("dresume");
 function downloadResume(){
   alert("Resume will be available soon! Thank you.");
 }
+
 
 dresume.addEventListener("click",downloadResume);
