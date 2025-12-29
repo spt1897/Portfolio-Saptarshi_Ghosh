@@ -2,7 +2,7 @@
       {
         "Skill":"C",
         "filter": ["all","prog"],
-        "image": "https://spt1897.github.io/Portfolio-Saptarshi_Ghosh/assets/icons/skills/c.png"
+        "image": "./assets/icons/skills/c.png"
     },
 
     {
@@ -60,4 +60,5 @@
     
 
 ]
+
 
