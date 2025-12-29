@@ -2,13 +2,13 @@
       {
         "Skill":"C",
         "filter": ["all","prog"],
-        "image": "../assets/icons/skills/c.png"
+        "image": "https://spt1897.github.io/Portfolio-Saptarshi_Ghosh/assets/icons/skills/c.png"
     },
 
     {
         "Skill":"C++",
         "filter": ["all","prog"],
-        "image": "../../assets/icons/skills/c++.png"
+        "image": "https://spt1897.github.io/Portfolio-Saptarshi_Ghosh/assets/icons/skills/c++.png"
     },
 
      {
@@ -60,3 +60,4 @@
     
 
 ]
+
