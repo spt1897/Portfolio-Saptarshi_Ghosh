@@ -2,7 +2,7 @@
       {
         "Skill":"C",
         "filter": ["all","prog"],
-        "image": "./assets/icons/skills/c.png"
+        "image": "/Portfolio-Saptarshi_Ghosh/assets/icons/skills/c.png"
     },
 
     {
@@ -60,5 +60,6 @@
     
 
 ]
+
 
 
