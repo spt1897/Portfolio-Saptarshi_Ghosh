@@ -356,6 +356,46 @@ backdrop-filter: blur(2px);
 }
 
 
+#academics h1{
+    color: yellow;
+    font-size: 2.4rem;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+#academics{
+   display: flex;
+    flex-flow: column;
+    width: 88%;
+    margin: auto;
+    gap:2.5rem;
+    margin-bottom: 2%;
+}
+
+.acads{
+      
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+      border: 2px solid rgb(178, 10, 245);
+     box-shadow: 0 3px 10px 3px purple;
+     padding: 2%;
+      font-size: 1.5rem;
+       color: white;
+       display: flex;
+       justify-content: space-between;
+}
+
+.acads p:nth-child(2){
+    color: yellow;
+
+}
+
+.acads p:nth-child(3){
+    color: yellow;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
 @media (max-width:1252px){
 
 #taglines{
@@ -368,7 +408,7 @@ backdrop-filter: blur(2px);
     color: yellow;
 }
 
-.info p:nth-child(2){
+.info p:nth-child(2),.acads{
     font-size: 1.2rem;
     color: white;
 }
@@ -408,7 +448,7 @@ backdrop-filter: blur(2px);
     color: yellow;
 }
 
-.info p:nth-child(2){
+.info p:nth-child(2),.acads{
     font-size: 1.3rem;
     color: white;
 }
@@ -441,7 +481,7 @@ backdrop-filter: blur(2px);
     color: yellow;
 }
 
-.info p:nth-child(2){
+.info p:nth-child(2),.acads{
     font-size: 1.2rem;
     color: white;
 }
@@ -474,7 +514,7 @@ backdrop-filter: blur(2px);
     color: yellow;
 }
 
-.info p:nth-child(2){
+.info p:nth-child(2),.acads{
     font-size: 1.2rem;
     color: white;
 }
@@ -537,7 +577,7 @@ backdrop-filter: blur(2px);
     color: yellow;
 }
 
-.info p:nth-child(2){
+.info p:nth-child(2),.acads{
     font-size: 1.2rem;
     color: white;
 }
@@ -596,7 +636,7 @@ backdrop-filter: blur(2px);
     color: yellow;
 }
 
-.info p:nth-child(2){
+.info p:nth-child(2),.acads{
     font-size: 1.1rem;
     color: white;
 }
@@ -615,6 +655,20 @@ backdrop-filter: blur(2px);
 #nitdgp{
     padding: 3%;
 }
+
+#academics{
+    gap:1rem;
+    margin-top: 6%;
+}
+#education{
+    margin-top: 6%;
+}
+
+#myself{
+ gap:1rem;
+}
+
+
 }
 
 
@@ -652,7 +706,7 @@ backdrop-filter: blur(2px);
     color: yellow;
 }
 
-.info p:nth-child(2){
+.info p:nth-child(2),.acads{
     font-size: .8rem;
     color: white;
 }
@@ -715,7 +769,7 @@ backdrop-filter: blur(2px);
     color: yellow;
 }
 
-.info p:nth-child(2){
+.info p:nth-child(2),.acads{
     font-size: .8rem;
     color: white;
 }
@@ -735,7 +789,7 @@ backdrop-filter: blur(2px);
     padding: 3%;
 }
 
-#education h1{
+#education h1,#academics h1{
     font-size: 1.8rem;
 }
 
@@ -784,7 +838,7 @@ backdrop-filter: blur(2px);
     color: yellow;
 }
 
-.info p:nth-child(2){
+.info p:nth-child(2),.acads{
     font-size: .6rem;
     color: white;
 }
@@ -804,7 +858,7 @@ backdrop-filter: blur(2px);
     padding: 3%;
 }
 
-#education h1{
+#education h1,#academics h1{
     font-size: 1.4rem;
 }
 
@@ -849,7 +903,7 @@ backdrop-filter: blur(2px);
     color: yellow;
 }
 
-.info p:nth-child(2){
+.info p:nth-child(2),.acads{
     font-size: .5rem;
     color: white;
 }
@@ -870,7 +924,7 @@ backdrop-filter: blur(2px);
    
 }
 
-#education h1{
+#education h1,#academics h1{
     font-size: 1.1rem;
 }
 
