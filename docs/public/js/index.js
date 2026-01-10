@@ -186,8 +186,9 @@ filterSelect.addEventListener("change",skillLoad);
 const dresume= document.getElementById("dresume");
 
 function downloadResume(){
-  alert("Resume will be available soon! Thank you.");
+    window.open("https://drive.google.com/file/d/1V72GPyJ8EsB2wuGg1ZSQfmAWKHuBKX-H/view?usp=drive_link", "_blank");
 }
 
 
 dresume.addEventListener("click",downloadResume);
+
